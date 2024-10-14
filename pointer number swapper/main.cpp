@@ -19,12 +19,13 @@ int main() {
 
    
     cout << "Enter two integers: "<< endl;
-    cin >> x >> y;
+    cin >> x >> y; // stores the values of x and y
 
-    cout << "Before swap: x = " << x << ", y = " << y << endl;
-    swap(&x, &y);
+    cout << "Before swap: x = " << x << ", y = " << y << endl; // prints values of x and y before swapping
+    
+    swap(&x, &y); // uses swap function to swap values based on address of x and y
 
-    cout << "After swap: x = " << x << ", y = " << y <<endl;
+    cout << "After swap: x = " << x << ", y = " << y <<endl; // prints swapped values of x and y
 
     return 0;
 }
