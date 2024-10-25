@@ -5,7 +5,6 @@
 //  Created by maya nachiappan on 10/8/24.
 //
 #include <iostream>
-using namespace std;
 
 // Function to swap two variables using pointers
 void swap(int* a, int* b) {
@@ -18,14 +17,14 @@ int main() {
     int x, y;
 
    
-    cout << "Enter two integers: "<< endl;
-    cin >> x >> y; // stores the values of x and y
+    std::cout << "Enter two integers: "<< std::endl;
+    std::cin >> x >> y; // stores the values of x and y
 
-    cout << "Before swap: x = " << x << ", y = " << y << endl; // prints values of x and y before swapping
+    std::cout << "Before swap: x = " << x << ", y = " << y << std::endl; // prints values of x and y before swapping
     
     swap(&x, &y); // uses swap function to swap values based on address of x and y
 
-    cout << "After swap: x = " << x << ", y = " << y <<endl; // prints swapped values of x and y
+    std::cout << "After swap: x = " << x << ", y = " << y <<std::endl; // prints swapped values of x and y
 
     return 0;
 }
