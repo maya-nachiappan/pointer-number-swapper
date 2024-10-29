@@ -6,6 +6,7 @@
 //
 
 #include "swap.hpp"
+#include <iostream>
 using namespace std;
 
 void swap(int* a, int* b) // function to swap two integers using pointers
