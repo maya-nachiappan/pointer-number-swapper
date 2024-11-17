@@ -10,7 +10,7 @@ using namespace std;
 
 int main ()
 {
-    printPointers();
+    printSwapValues();
     return 0;
 }
 

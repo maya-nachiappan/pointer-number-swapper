@@ -8,8 +8,8 @@
 #ifndef swap_hpp
 #define swap_hpp
 
-void swapPointers(int* a, int* b);
-void printPointers();
+void swapValues(int* a, int* b);
+void printSwapValues();
 
 
 #endif /* swap_hpp */

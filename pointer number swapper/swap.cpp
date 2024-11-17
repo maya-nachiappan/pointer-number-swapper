@@ -11,14 +11,15 @@
 using namespace std;
 
 // Function to swap two variables using pointers
-void swapPointers(int* a, int* b)
+void swapValues(int* a, int* b)
 {
     int temp=*a;// assigns the value at the address pointed by a
     *a = *b; // assignts the balue at the address pointed by b to the address pointed by a
     *b = temp; // assigns the value stored in temp to address b
 }
 
-void printPointers()
+// function to prompt user for input and print the result before and after swap
+void printSwapValues()
 {
     int x, y;
     
@@ -27,7 +28,7 @@ void printPointers()
     
     cout << "Before swap: x = " << x << ", y = " << y << endl; // prints values of x and y before swapping
     
-    swapPointers(&x, &y); // uses swap function to swap values based on address of x and y
+    swapValues(&x, &y); // uses swap function to swap values based on address of x and y
     
     cout << "After swap: x = " << x << ", y = " << y <<endl; // prints swapped values of x and y
 }
